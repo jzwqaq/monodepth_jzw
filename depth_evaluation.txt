@@ -1,0 +1,249 @@
+# mono_640x192
+Scaling ratios | med: 31.286 | std: 0.089
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.115  &   0.903  &   4.863  &   0.193  &   0.877  &   0.959  &   0.981  \\
+
+# ~/tmp/12_01_v1_new/models/models/weights_0
+ Scaling ratios | med: 31.113 | std: 0.088
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.117  &   0.952  &   4.918  &   0.197  &   0.874  &   0.958  &   0.980  \\
+
+# ~/tmp/12_01_v1_new/models/models/weights_1
+Scaling ratios | med: 31.137 | std: 0.091
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.118  &   0.985  &   4.960  &   0.197  &   0.869  &   0.958  &   0.980  \\
+
+# ~/tmp/12_01_v1_new/models/models/weights_2 
+Scaling ratios | med: 31.309 | std: 0.091
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.119  &   0.983  &   4.956  &   0.195  &   0.870  &   0.958  &   0.980  \\
+
+# ~/tmp/12_01_v1_new/models/models/weights_3
+Scaling ratios | med: 31.224 | std: 0.086
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.120  &   0.988  &   4.929  &   0.195  &   0.872  &   0.958  &   0.980  \\
+
+#  ~/tmp/12_01_v1_new/models/models/weights_4
+ Scaling ratios | med: 31.602 | std: 0.088
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.119  &   0.966  &   4.973  &   0.195  &   0.869  &   0.958  &   0.981  \\
+###########################################
+# ~/tmp/12_01_v1_new/models/models/weights_5
+ Scaling ratios | med: 31.498 | std: 0.095
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.115  &   0.869  &   4.829  &   0.193  &   0.873  &   0.959  &   0.981  \\
+###########################################
+# ~/tmp/12_01_v1_new/models/models/weights_6
+ Scaling ratios | med: 31.378 | std: 0.091
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.120  &   0.965  &   4.946  &   0.197  &   0.869  &   0.957  &   0.980  \\
+
+# ~/tmp/12_01_v1_new/models/models/weights_7
+ Scaling ratios | med: 31.196 | std: 0.093
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.119  &   0.966  &   4.945  &   0.196  &   0.872  &   0.958  &   0.980  \\
+
+# ~/tmp/12_01_v1_new/models/weights_8
+ Scaling ratios | med: 31.327 | std: 0.090
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.116  &   0.903  &   4.919  &   0.198  &   0.872  &   0.958  &   0.980  \\
+
+# ~/tmp/12_01_v1_new/models/models/weights_9
+Scaling ratios | med: 31.069 | std: 0.090
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.117  &   0.946  &   4.925  &   0.197  &   0.871  &   0.957  &   0.980  \\
+
+# ~/tmp/12_01_v1_new/models/models/weights_10
+ Scaling ratios | med: 30.727 | std: 0.092
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.117  &   0.939  &   4.911  &   0.196  &   0.872  &   0.959  &   0.980  \\
+
+# ~/tmp/12_01_v1_new/models/models/weights_11
+Scaling ratios | med: 31.015 | std: 0.092
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.119  &   0.983  &   4.984  &   0.196  &   0.872  &   0.958  &   0.980  \\
+
+# ~/tmp/12_01_v1_new/models/models/weights_12
+ Scaling ratios | med: 30.744 | std: 0.091
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.116  &   0.905  &   4.847  &   0.194  &   0.872  &   0.959  &   0.981  \\
+
+# ~/tmp/12_01_v1_new/models/models/weights_13
+Scaling ratios | med: 30.720 | std: 0.093
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.115  &   0.877  &   4.837  &   0.195  &   0.873  &   0.958  &   0.981  \\
+
+# ~/tmp/12_01_v1_new/models/weights_14 
+Scaling ratios | med: 30.820 | std: 0.093
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.115  &   0.899  &   4.836  &   0.195  &   0.874  &   0.959  &   0.980  \\
+
+# ~/tmp/12_01_v1_new/models/models/weights_15
+ Scaling ratios | med: 30.635 | std: 0.093
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.116  &   0.939  &   4.905  &   0.195  &   0.875  &   0.959  &   0.980  \\
+
+
+# ~/tmp/12_01_v1_new/models/models/weights_16
+ Scaling ratios | med: 30.487 | std: 0.092
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.116  &   0.936  &   4.898  &   0.195  &   0.875  &   0.959  &   0.980  \\
+
+# ~/tmp/12_01_v1_new/models/models/weights_17
+ Scaling ratios | med: 30.361 | std: 0.092
+
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.116  &   0.955  &   4.943  &   0.195  &   0.875  &   0.958  &   0.980  \\
+
+# ~/tmp/12_01_v1_new/models/models/weights_18
+ Scaling ratios | med: 30.237 | std: 0.093
+
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.116  &   0.924  &   4.884  &   0.195  &   0.875  &   0.959  &   0.980  \\
+
+# ~/tmp/12_01_v1_new/models/weights_19
+Scaling ratios | med: 30.126 | std: 0.093
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.116  &   0.935  &   4.885  &   0.1A95  &   0.875  &   0.959  &   0.980  \\
+
+################################################################################
+
+# ~/tmp/12_01_v3_bs_12_new/models/models/weights_0
+ Scaling ratios | med: 31.249 | std: 0.094
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.117  &   0.959  &   4.999  &   0.197  &   0.870  &   0.957  &   0.980  \\
+
+#  ~/tmp/12_01_v3_bs_12_new/models/models/weights_1
+ Scaling ratios | med: 31.982 | std: 0.089
+   abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.117  &   0.914  &   4.919  &   0.195  &   0.871  &   0.958  &   0.980  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_2
+ Scaling ratios | med: 30.832 | std: 0.092
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.116  &   0.911  &   4.902  &   0.195  &   0.873  &   0.959  &   0.980  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_3
+ Scaling ratios | med: 31.343 | std: 0.090
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.116  &   0.898  &   4.885  &   0.194  &   0.871  &   0.958  &   0.981  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_4
+ Scaling ratios | med: 31.305 | std: 0.089
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.119  &   0.925  &   4.896  &   0.196  &   0.870  &   0.957  &   0.980  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_5
+ Scaling ratios | med: 30.636 | std: 0.091
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.121  &   1.042  &   5.050  &   0.198  &   0.873  &   0.957  &   0.979  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_6
+ Scaling ratios | med: 31.115 | std: 0.094
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.119  &   0.949  &   4.932  &   0.197  &   0.871  &   0.957  &   0.980  \\
+###########################################
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_7
+ Scaling ratios | med: 30.757 | std: 0.091
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.115  &   0.877  &   4.821  &   0.195  &   0.876  &   0.959  &   0.980  \\
+###########################################
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_8
+ Scaling ratios | med: 30.425 | std: 0.091
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.118  &   0.977  &   4.926  &   0.196  &   0.873  &   0.958  &   0.980  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_9
+ Scaling ratios | med: 30.095 | std: 0.088
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.119  &   0.980  &   4.969  &   0.198  &   0.872  &   0.957  &   0.980  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_10
+ Scaling ratios | med: 30.792 | std: 0.086
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.116  &   0.913  &   4.903  &   0.194  &   0.874  &   0.958  &   0.981  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_11
+ Scaling ratios | med: 30.274 | std: 0.094
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.117  &   0.900  &   4.827  &   0.194  &   0.872  &   0.959  &   0.981  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_12
+ Scaling ratios | med: 30.878 | std: 0.091
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.119  &   0.987  &   5.024  &   0.198  &   0.871  &   0.957  &   0.980  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_13
+ Scaling ratios | med: 30.008 | std: 0.091
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.115  &   0.888  &   4.833  &   0.195  &   0.876  &   0.958  &   0.980  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_14
+ Scaling ratios | med: 30.227 | std: 0.091
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.116  &   0.901  &   4.864  &   0.196  &   0.872  &   0.958  &   0.980  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_15
+ Scaling ratios | med: 30.359 | std: 0.091
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.115  &   0.915  &   4.877  &   0.195  &   0.875  &   0.958  &   0.980  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_16
+ Scaling ratios | med: 30.034 | std: 0.092
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.115  &   0.928  &   4.877  &   0.194  &   0.876  &   0.959  &   0.980  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_17
+ Scaling ratios | med: 30.012 | std: 0.092
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.115  &   0.924  &   4.874  &   0.194  &   0.876  &   0.959  &   0.980  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_18
+ Scaling ratios | med: 30.065 | std: 0.091
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.115  &   0.911  &   4.866  &   0.194  &   0.876  &   0.959  &   0.981  \\
+
+# /home/robot/tmp/12_01_v3_bs_12_new/models/models/weights_19
+ Scaling ratios | med: 29.920 | std: 0.092
+ abs_rel |   sq_rel |     rmse | rmse_log |       a1 |       a2 |       a3 | 
+&   0.115  &   0.916  &   4.869  &   0.194  &   0.875  &   0.959  &   0.980  \\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
