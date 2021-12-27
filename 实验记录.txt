@@ -1,0 +1,42 @@
+
+#########pose评估#########
+###使用auto-mask训练20个epoach的良好模型
+python evaluate_pose.py --eval_split odom_9 --load_weights_folder /home/robot/tmp/wights_save_2021_10_29/weights_19 --data_path kitti_odom/
+-> Computing pose predictions
+
+   Trajectory error: 0.018, std: 0.014
+
+-> Predictions saved to /home/robot/tmp/wights_save_2021_10_29/weights_19/poses.npy
+
+#####jzw2 不用auto-mask用动态mask训练5个epoach的模型
+python evaluate_pose.py --eval_split odom_9 --load_weights_folder /home/robot/tmp/jzw2/models/weights_1 --data_path kitti_odom/
+-> Computing pose predictions
+
+   Trajectory error: 0.018, std: 0.013
+
+-> Predictions saved to /home/robot/tmp/jzw2/models/weights_1/poses.npy
+
+
+
+
+python maskrcnn_t4d.py
+python train_t4d.py --model_name t4d --png --batch_size 1 --disable_automasking
+
+
+
+
+
+
+设置环境
+requirements.txt
+pip install --upgrade pip setuptools wheel
+apt-get update 
+apt-get install vim
+apt-get install ffmpeg libsm6 libxext6
+pip install pycocotools  -i  https://pypi.tuna.tsinghua.edu.cn/simple
+vim /opt/conda/lib/python3.6/site-packages/keras/engine/topology.py    3114row
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+conda install pytorch=0.4.1 torchvision=0.2.1        #-c pytorch
+pip install tensorboardX==1.4
+conda install opencv=3.3.1   # just needed for evaluation
+conda install cudatoolkit==10.0

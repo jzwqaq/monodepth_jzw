@@ -3,6 +3,10 @@ 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
 ####Training 
 python train.py --model_name xxx --png --batch_size 1 
 
+--model_name 12_01_v1 --png --batch_size 8  --load_weights_folder /share/home/linandi/jzw/mono_640x192 --num_epochs 5
+
+--model_name 12_20_new --png --batch_size 8  --load_weights_folder /share/home/linandi/tmp/12_01_v1_new/models/weights_8 --num_epochs 50
+
 ####训练自己的模型，ban掉auto——mask
 python train.py --model_name xxx --png --batch_size 1 --disable_automasking
 
@@ -20,6 +24,23 @@ python train.py --model_name jzw1 --png --batch_size 1 --disable_automasking  --
 
 ####评估pose
 python evaluate_pose.py --eval_split odom_9 --load_weights_folder /home/robot/tmp/wights_save_2021_10_29/weights_19 --data_path kitti_odom/
+
+evo_traj kitti 09_11_30.txt 09_12_01_2.txt 09_paper.txt  --ref=09_new.txt  -s -p  --plot_mode=xz
+
+evo_rpe kitti  09_new.txt 09_11_30.txt  -s -p  --plot_mode=xz
+
+evo_traj kitti 10_12_01_v1.txt 10_11_30.txt 10_paper.txt  --ref=10_new.txt  -s -p  --plot_mode=xz
+
+evo_traj kitti    09_monodepth2.txt  09_12_01_v1_0.txt 09_12_01_v1_1.txt 09_12_01_v1_2.txt 09_12_01_v1_3.txt 09_12_01_v1_4.txt  --ref=09_new.txt  -vs  -p  --plot_mode=x
+
+evo_traj kitti    10_monodepth2.txt  10_12_01_v1_0.txt 10_12_01_v1_1.txt 10_12_01_v1_2.txt 10_12_01_v1_3.txt 10_12_01_v1_4.txt  --ref=10_new.txt  -vs  -p  --plot_mode=xz
+
+evo_traj kitti    10_monodepth2.txt  10_12_01_v3_bs_12_0.txt 10_12_01_v3_bs_12_1.txt 10_12_01_v3_bs_12_2.txt 10_12_01_v3_bs_12_3.txt 10_12_01_v3_bs_12_4.txt  --ref=10_new.txt  -vs  -p  --plot_mode=xz
+
+evo_traj kitti    09_monodepth2.txt  09_12_01_v3_bs_12_0.txt 09_12_01_v3_bs_12_1.txt 09_12_01_v3_bs_12_2.txt 09_12_01_v3_bs_12_3.txt 09_12_01_v3_bs_12_4.txt  --ref=09_new.txt  -vs  -p  --plot_mode=xz
+
+--model_name 12_01_v3_bs_12_new --png --batch_size 12 --load_weights_folder /share/home/linandi/tmp/12_01_v3_bs_12/models/weights_4 --num_epochs 20
+--model_name 12_01_v1_new --png --batch_size 8  --load_weights_folder /share/home/linandi/tmp/12_01_v1/models/weights_4 --num_epochs 20
 
 ####tensorboard查看
 tensorboard --logdir=

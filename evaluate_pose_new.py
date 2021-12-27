@@ -10,6 +10,7 @@ Author:   Jizhiwei
 Version:  V 0.1
 File:     evaluate_pose.py
 Describe: Writen during my master's degree at ZJUT
+修改为只计算xz 不计算y
 """
 from __future__ import absolute_import, division, print_function
 
@@ -49,7 +50,8 @@ def compute_ate(gtruth_xyz, pred_xyz_o):
     # Optimize the scaling factor
     scale = np.sum(gtruth_xyz * pred_xyz) / np.sum(pred_xyz ** 2)
     alignment_error = pred_xyz * scale - gtruth_xyz
-    rmse = np.sqrt(np.sum(alignment_error ** 2)) / gtruth_xyz.shape[0]
+    # print(alignment_error.shape)
+    rmse = np.sqrt(np.sum(alignment_error[:, :-1] ** 2)) / gtruth_xyz.shape[0]
     return rmse
 
 
@@ -59,7 +61,7 @@ def evaluate(opt):
     assert os.path.isdir(opt.load_weights_folder), \
         "Cannot find a folder at {}".format(opt.load_weights_folder)
 
-    assert opt.eval_split == "odom_9" or opt.eval_split == "odom_10" or opt.eval_split == "odom_0", \
+    assert opt.eval_split == "odom_9" or opt.eval_split == "odom_10", \
         "eval_split should be either odom_9 or odom_10"
 
     sequence_id = int(opt.eval_split.split("_")[1])
@@ -116,7 +118,7 @@ def evaluate(opt):
         T_pred.append(T_pr[0:3, :].ravel())
 
     # print(T_pred.shape)
-    np.savetxt("/home/robot/tmp/date/19/10.txt", T_pred)
+    np.savetxt("/home/robot/tmp/test.txt", T_pred)
 
     # print(pred_poses.shape)
     # print(pred_poses)

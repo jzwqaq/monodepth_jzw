@@ -220,7 +220,7 @@ def evaluate(opt):
         pred_depth[pred_depth > MAX_DEPTH] = MAX_DEPTH
 
         errors.append(compute_errors(gt_depth, pred_depth))
-
+    print("# {}".format(opt.load_weights_folder))
     if not opt.disable_median_scaling:
         ratios = np.array(ratios)
         med = np.median(ratios)
@@ -228,7 +228,7 @@ def evaluate(opt):
 
     mean_errors = np.array(errors).mean(0)
 
-    print("\n  " + ("{:>8} | " * 7).format("abs_rel", "sq_rel", "rmse", "rmse_log", "a1", "a2", "a3"))
+    print(("{:>8} | " * 7).format("abs_rel", "sq_rel", "rmse", "rmse_log", "a1", "a2", "a3"))
     print(("&{: 8.3f}  " * 7).format(*mean_errors.tolist()) + "\\\\")
     print("\n-> Done!")
 

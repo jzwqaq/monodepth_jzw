@@ -1,6 +1,6 @@
 # -*-coding:utf-8-*-
-fo = open("./09.txt", "r+")
-new = open("./09_new.txt", "w")
+fo = open("./00.txt", "r+")
+new = open("./00_new.txt", "w")
 for line in fo.readlines():
     # print(line)
     # print(line.split(" "))

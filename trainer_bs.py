@@ -531,33 +531,36 @@ class Trainer:
             mid_target_output = []
             target_masks = []
             target_mask_reshape = []
+            # print(target.shape)
+            # print(target[1, :, :, :].shape)
             for i in range(self.opt.batch_size):
-                im_target[i] = tensor_to_np(target[i, :, :, :])
-                mid_target_output[i] = self.predictor.detect([im_target[i]], verbose=0)
-                target_mask[i] = get_tf_maskrcnn_mask(mid_target_output[i], im_target[i])
-                target_mask_reshape = torch.from_numpy(target_mask[i][:, :, 1].reshape(1, 1, 192, 640)).cuda().float()
+                # print(i)
+                im_target = tensor_to_np(target[i, :, :, :])
+                mid_target_output = self.predictor.detect([im_target], verbose=0)
+                target_mask = get_tf_maskrcnn_mask(mid_target_output, im_target)
+                target_mask_reshape = torch.from_numpy(target_mask[:, :, 1].reshape(1, 1, 192, 640)).cuda().float()
                 target_masks.append(target_mask_reshape)
-                cv2.imwrite("../target"+'%d' % i + '.png', im_target[i])
-            print(target_masks.shape)
+                # cv2.imwrite("../target"+'%d' % i + '.png', target_mask*255)
+            # print(np.array(target_masks).shape)
 
             pred_mask = [[], []]
-            # 相邻帧图像对应为target = inputs[("color", -1 or 1, source_scale)]
             for frame_id in self.opt.frame_ids[1:]:
                 pred = outputs[("color", frame_id, scale)]
                 pred_masks = []
                 im_pred = []
                 mid_pred_output = []
                 for i in range(self.opt.batch_size):
-                    im_pred[i] = tensor_to_np(pred[i, :, :, :])
-                    mid_pred_output[i] = self.predictor.detect([im_pred[i]], verbose=0)
-                    pred_mask[i][frame_id] = get_tf_maskrcnn_mask(mid_pred_output[i], im_pred[i])
+                    im_pred = tensor_to_np(pred[i, :, :, :])
+                    mid_pred_output = self.predictor.detect([im_pred], verbose=0)
+                    pred_mask[frame_id] = get_tf_maskrcnn_mask(mid_pred_output, im_pred)
                     pred_mask_reshape = torch.from_numpy(
-                        pred_mask[i][frame_id][:, :, 1].reshape(1, 1, 192, 640)).cuda().float()
+                        pred_mask[frame_id][:, :, 1].reshape(1, 1, 192, 640)).cuda().float()
                     pred_masks.append(pred_mask_reshape)
-                    cv2.imwrite("../pred" + '%d' % i + '.png', im_target[i])
+                    # cv2.imwrite("../pred" + '%d' % i + '.png', pred_mask[frame_id]*255)
 
                 reprojection_losses.append(self.compute_reprojection_loss(pred, target)
                                            * target_mask_reshape * pred_mask_reshape)
+            # time.sleep(10000)
 
             # 这里的cat是按第1个坐标轴进行拼接 0行1列   扩充列 列变大了
             # 这里cat后的reprojection_losses是两个变换后的图像与target图像的重新投影误差损失
